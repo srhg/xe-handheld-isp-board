@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6100 4100 5800 4100
+Wire Wire Line
+	6100 4200 5800 4200
+Wire Wire Line
+	6100 4300 5800 4300
+Wire Wire Line
+	5200 3600 5200 3400
+Wire Wire Line
+	5200 3400 6800 3400
+Wire Wire Line
+	6800 3400 6800 4100
+Wire Wire Line
+	6800 4100 6700 4100
+Wire Wire Line
+	5200 4700 5200 4800
+Wire Wire Line
+	5200 4800 5900 4800
+Wire Wire Line
+	6800 4800 6800 4300
+Wire Wire Line
+	6800 4300 6700 4300
+Wire Wire Line
+	5800 4000 5800 3700
+Wire Wire Line
+	5800 3700 6900 3700
+Wire Wire Line
+	6900 3700 6900 4200
+Wire Wire Line
+	6900 4200 6700 4200
+$Comp
+L srxe-eagle-import:M03X2FEMALE_SMD JP2
+U 1 0 4804D7FCFA93C76E
+P 6400 4200
+F 0 "JP2" H 6200 4420 42  0000 L BNN
+F 1 "M03X2FEMALE_SMD" H 6200 3920 42  0000 L BNN
+F 2 "srxe:2X3_SMD" H 6400 4200 50  0001 C CNN
+F 3 "" H 6400 4200 50  0001 C CNN
+	1    6400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L srxe-eagle-import:SMARTRESPONSEXE U$1
+U 1 0 850A8AB0BABD3B23
+P 5200 4100
+F 0 "U$1" H 5200 4100 50  0001 C CNN
+F 1 "SMARTRESPONSEXE" H 5200 4100 50  0001 C CNN
+F 2 "srxe:SMARTRESPONSEXEPOGO" H 5200 4100 50  0001 C CNN
+F 3 "" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E07176F
+P 5900 4600
+F 0 "H1" H 6000 4651 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6000 4560 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5900 4600 50  0001 C CNN
+F 3 "~" H 5900 4600 50  0001 C CNN
+	1    5900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4700 5900 4800
+Connection ~ 5900 4800
+Wire Wire Line
+	5900 4800 6800 4800
+$EndSCHEMATC
