@@ -55,8 +55,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 4 4)
-    (pad_drill 3.2)
+    (pad_size 1.5 1.5)
+    (pad_drill 0.8)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
@@ -131,7 +131,68 @@
     (add_net "Net-(JP2-Pad2)")
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3 (layer Top) (tedit 5E072B4C) (tstamp 5E13908B)
+  (module srxe:SMARTRESPONSEXEPOGO (layer Top) (tedit 5E31273D) (tstamp 5E0708CC)
+    (at 144.2211 104.9986)
+    (path /850A8AB0BABD3B23)
+    (fp_text reference U$1 (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    )
+    (fp_text value SMARTRESPONSEXE (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    )
+    (fp_text user MISO (at 19.685 -2.5426) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user RST (at 19.685 2.5374) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user SCK (at 19.685 -0.0026) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user GND (at 33.02 2.5374) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user VCC (at 33.655 -2.5426) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user MOSI (at 34.29 -0.0026) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user TDI (at 7.2 -3.6) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user TDO (at 2.4 -3.6) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user TMS (at -2.4 -3.6) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (fp_text user TCK (at -7.2 -3.6) (layer F.SilkS) hide
+      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
+    )
+    (pad GND thru_hole circle (at -2.4 2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 10 "Net-(H1-Pad1)") (solder_mask_margin 0.1016))
+    (pad SCK thru_hole circle (at -7.2 2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 3 "Net-(JP2-Pad3)") (solder_mask_margin 0.1016))
+    (pad TCK thru_hole circle (at -7.2 -2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 6 "Net-(U$1-PadTCK)") (solder_mask_margin 0.1016))
+    (pad TMS thru_hole circle (at -2.4 -2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 7 "Net-(U$1-PadTMS)") (solder_mask_margin 0.1016))
+    (pad TDO thru_hole circle (at 2.4 -2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 8 "Net-(U$1-PadTDO)") (solder_mask_margin 0.1016))
+    (pad TDI thru_hole circle (at 7.2 -2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 9 "Net-(U$1-PadTDI)") (solder_mask_margin 0.1016))
+    (pad MOSI thru_hole circle (at 7.2 2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 2 "Net-(JP2-Pad4)") (solder_mask_margin 0.1016))
+    (pad VCC thru_hole circle (at 2.4 2.2) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 4 "Net-(JP2-Pad2)") (solder_mask_margin 0.1016))
+    (pad MISO thru_hole circle (at 4.8 0) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 5 "Net-(JP2-Pad1)") (solder_mask_margin 0.1016))
+    (pad RST thru_hole circle (at 0 0) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
+      (net 1 "Net-(JP2-Pad5)") (solder_mask_margin 0.1016))
+  )
+
+  (module MountingHole:MountingHole_3.2mm_M3 (layer Top) (tedit 5E312686) (tstamp 5E13908B)
     (at 158.1911 104.996)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
@@ -148,7 +209,7 @@
     )
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
     (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
-    (pad 1 thru_hole circle (at 0 0) (size 4 4) (drill 3.2) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at 0 0.0026) (size 4 4) (drill 3) (layers *.Cu *.Mask)
       (net 10 "Net-(H1-Pad1)"))
   )
 
@@ -197,67 +258,6 @@
       (net 5 "Net-(JP2-Pad1)") (solder_mask_margin 0.1016))
   )
 
-  (module srxe:SMARTRESPONSEXEPOGO (layer Top) (tedit 5E072537) (tstamp 5E0708CC)
-    (at 144.2211 104.9986)
-    (path /850A8AB0BABD3B23)
-    (fp_text reference U$1 (at 0 0) (layer F.SilkS) hide
-      (effects (font (size 1.27 1.27) (thickness 0.15)))
-    )
-    (fp_text value SMARTRESPONSEXE (at 0 0) (layer F.SilkS) hide
-      (effects (font (size 1.27 1.27) (thickness 0.15)))
-    )
-    (fp_text user MISO (at 19.685 -2.5426) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user RST (at 19.685 2.5374) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user SCK (at 19.685 -0.0026) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user GND (at 33.02 2.5374) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user VCC (at 33.655 -2.5426) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user MOSI (at 34.29 -0.0026) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user TDI (at 7.2 -3.6) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user TDO (at 2.4 -3.6) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user TMS (at -2.4 -3.6) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (fp_text user TCK (at -7.2 -3.6) (layer F.SilkS) hide
-      (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-    )
-    (pad GND thru_hole circle (at -2.4 2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 10 "Net-(H1-Pad1)") (solder_mask_margin 0.1016))
-    (pad SCK thru_hole circle (at -7.2 2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 3 "Net-(JP2-Pad3)") (solder_mask_margin 0.1016))
-    (pad TCK thru_hole circle (at -7.2 -2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 6 "Net-(U$1-PadTCK)") (solder_mask_margin 0.1016))
-    (pad TMS thru_hole circle (at -2.4 -2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 7 "Net-(U$1-PadTMS)") (solder_mask_margin 0.1016))
-    (pad TDO thru_hole circle (at 2.4 -2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 8 "Net-(U$1-PadTDO)") (solder_mask_margin 0.1016))
-    (pad TDI thru_hole circle (at 7.2 -2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 9 "Net-(U$1-PadTDI)") (solder_mask_margin 0.1016))
-    (pad MOSI thru_hole circle (at 7.2 2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 2 "Net-(JP2-Pad4)") (solder_mask_margin 0.1016))
-    (pad VCC thru_hole circle (at 2.4 2.2) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 4 "Net-(JP2-Pad2)") (solder_mask_margin 0.1016))
-    (pad MISO thru_hole circle (at 4.8 0) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 5 "Net-(JP2-Pad1)") (solder_mask_margin 0.1016))
-    (pad RST thru_hole circle (at 0 0) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
-      (net 1 "Net-(JP2-Pad5)") (solder_mask_margin 0.1016))
-  )
-
   (gr_text "Smart Response Hacking Group\ngithub.com/srhg\n\nRemix of git.io/SRXE\nThanks securelyfitz!" (at 181.0511 104.996) (layer B.SilkS)
     (effects (font (size 1.15 1.15) (thickness 0.2)) (justify left mirror))
   )
@@ -304,7 +304,7 @@
   (segment (start 153.0285 108.806) (end 169.4937 108.806) (width 0.25) (layer Top) (net 2))
   (segment (start 136.9059 107.0306) (end 137.0211 107.1986) (width 0.254) (layer Top) (net 3) (tstamp 55A1223F4B20))
   (segment (start 165.8111 104.996) (end 165.8111 104.996) (width 0.25) (layer Bottom) (net 3) (tstamp 5E1393A0))
-  (via (at 165.8111 104.996) (size 0.7564) (drill 0.35) (layers Top Bottom) (net 3) (status 1000000))
+  (via (at 165.8111 104.996) (size 0.8) (drill 0.4) (layers Top Bottom) (net 3) (status 1000000))
   (segment (start 165.8137 104.9986) (end 165.8111 104.996) (width 0.25) (layer Top) (net 3))
   (segment (start 168.0411 104.9986) (end 165.8137 104.9986) (width 0.25) (layer Top) (net 3))
   (segment (start 162.0011 101.186) (end 165.8111 104.996) (width 0.25) (layer Bottom) (net 3))
